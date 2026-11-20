@@ -9,3 +9,4 @@ raw_photos/
 *.tmp
 dataset/rejected/
 *.tsbuildinfo
+lipi_lens_dataset.zip
