@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+anthropic
+google-genai  # free Gemini API (default provider)
+pillow
+opencv-python-headless<5  # 5.x dropped Haar cascades
+numpy==2.5.3  # 2.5.5 DLL is blocked by Windows Smart App Control on this machine
+indic-transliteration
+jiwer
+python-dotenv
