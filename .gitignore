@@ -11,3 +11,4 @@ dataset/rejected/
 *.tsbuildinfo
 lipi_lens_dataset.zip
 lipi_lens_demo.mp4
+voice_sample_*.mp3

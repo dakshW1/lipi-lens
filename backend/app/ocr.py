@@ -53,8 +53,8 @@ Rules:
 is partly hidden or blurry, transcribe what you can see and lower the confidence.
 - Keep the Kannada exactly as written on the sign, including spelling mistakes, in Kannada Unicode.
 - One entry per visual line of text, in reading order (top-to-bottom, left-to-right).
-- Include lines that contain Kannada. For a line that is only English/digits, include it only if \
-it is part of the same sign (e.g. a bus route number); put such text in `kannada` as-is.
+- Include only lines that contain Kannada script. Skip lines written only in English/Latin letters \
+(on bilingual signs they just repeat the Kannada). Exception: a bus route number may be included as-is.
 - `translation`: a natural English translation. For place names, give the common English \
 spelling (e.g. ಮೆಜೆಸ್ಟಿಕ್ -> "Majestic", ಮಲ್ಲೇಶ್ವರಂ -> "Malleshwaram").
 - `bbox`: [x_min, y_min, x_max, y_max] as fractions of image width/height (0 to 1). Approximate is fine.

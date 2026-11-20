@@ -146,7 +146,10 @@ function Results({
     ? `${result.structured.route_no ? `Bus ${result.structured.route_no} to ` : 'To '}${
         lines.find((l) => l.kannada.includes(result.structured!.destination))?.translation ?? result.structured.destination
       }`
-    : lines.map((l) => l.translation).filter(Boolean).slice(0, 3).join(' · ')
+    : [...new Set(lines.filter((l) => /[ಀ-೿]/.test(l.kannada)).map((l) => l.translation.trim()))]
+        .filter(Boolean)
+        .slice(0, 3)
+        .join(' · ')
 
   const copyAll = async () => {
     try {
